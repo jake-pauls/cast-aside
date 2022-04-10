@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class LightScript : MonoBehaviour
 {
-    public GameObject lighthouseBeams;
+    //public GameObject lighthouseBeams;
     public Light directionalLight;
     float beamAngle = 0.0f, beamRotateSpeed = 25.0f;
 
@@ -35,7 +35,7 @@ public class LightScript : MonoBehaviour
         beamAngle += Time.deltaTime * beamRotateSpeed;
         if (beamAngle >= 360f)
             beamAngle = 0.0f;
-        lighthouseBeams.transform.eulerAngles = new Vector3(beamAngle, 0.0f, 0.0f);
+        //lighthouseBeams.transform.eulerAngles = new Vector3(beamAngle, 0.0f, 0.0f);
         greybox.SetFloat(greyboxRotationID, greybox.GetFloat(greyboxRotationID) + Time.deltaTime * greyboxRotationSpeed);
 
         if(greyboxLightningWait == -1)
