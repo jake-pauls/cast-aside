@@ -136,7 +136,7 @@ Material:
     m_Colors:
     - SandBottom: {r: 0.8584906, g: 0.58523726, b: 0.044544328, a: 0}
     - SandTop: {r: 0.9339623, g: 0.7520949, b: 0.4273318, a: 0}
-    - ShineColor: {r: 0.8584906, g: 0.75890326, b: 0.5223834, a: 0}
+    - ShineColor: {r: 0, g: 0, b: 0, a: 0}
     - SubstrateColor: {r: 0.9339623, g: 0.64920074, b: 0.18943575, a: 0}
     - UVTiling: {r: 2, g: 2, b: 0, a: 0}
     - _BaseColor: {r: 0.99869555, g: 1, b: 0.7490566, a: 1}
