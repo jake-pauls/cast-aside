@@ -20,8 +20,12 @@ public class LightScript : MonoBehaviour
     float greyboxRotation, greyboxExposure;
     float greyboxBaseExposure;//0.35
 
+    private AudioSource lightningSound;
+
     void Start()
     {
+        lightningSound = gameObject.GetComponent<AudioSource>();
+
         directionalLight.intensity = 0.0f;
         greyboxExposureID = Shader.PropertyToID("_Exposure");
         greyboxRotationID = Shader.PropertyToID("_Rotation");
@@ -61,6 +65,9 @@ public class LightScript : MonoBehaviour
                     directionalLight.intensity = greyboxLightningWave / greyboxLightningLevels[greyboxLightningWaveCount];
                     if (greyboxLightningWaveIncline)
                     {
+                        if (!lightningSound.isPlaying)
+                            lightningSound.Play();
+
                         greyboxLightningWave += Time.deltaTime * greyboxLightningSpeed;
                         if (greyboxLightningWave >= greyboxLightningLevels[greyboxLightningWaveCount])
                         {
