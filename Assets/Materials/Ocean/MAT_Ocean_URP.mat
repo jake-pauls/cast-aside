@@ -87,7 +87,7 @@ Material:
     m_Floats:
     - DepthDistance: 1.2
     - DepthStrength: 1.2
-    - DisplacementStrength: 0.03
+    - DisplacementStrength: 0.05
     - NormalStrength: 0.05
     - NormalTiling: 0.3
     - PanSpeed: 0.03
